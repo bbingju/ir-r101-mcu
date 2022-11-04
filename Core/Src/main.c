@@ -341,8 +341,8 @@ void StartDefaultTask(void *argument)
 	    _select_audio(0);
 	}
 	osDelay(10);
-  }
-  /* USER CODE END 5 */
+    }
+    /* USER CODE END 5 */
 }
 
 /**
