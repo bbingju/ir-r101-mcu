@@ -4,7 +4,6 @@
 *                         www.segger.com                             *
 **********************************************************************
 
-File          : C:/Users/bbing/Dropbox/work/nerdvana/2022-08-UjinTech/mcu_src/ozone-prj.jdebug
 Created       : 30 Sep 2022 10:02
 Ozone Version : V3.26i
 */
@@ -23,12 +22,12 @@ void OnProjectLoad (void) {
   // Dialog-generated settings
   //
   Project.SetDevice ("STM32F401CC");
-  Project.SetHostIF ("USB", "260108941");
+  Project.SetHostIF ("USB", "");
   Project.SetTargetIF ("SWD");
   Project.SetTIFSpeed ("4 MHz");
-  Project.AddPathSubstitute ("C:/Users/bbing/Dropbox/work/nerdvana/2022-08-UjinTech/mcu_src", "$(ProjectDir)");
-  // Project.AddPathSubstitute ("c:/users/bbing/dropbox/work/nerdvana/2022-08-ujintech/mcu_src", "$(ProjectDir)");
+  Project.AddPathSubstitute (".", "$(ProjectDir)");
   Project.AddSvdFile ("$(InstallDir)/Config/CPU/Cortex-M4F.svd");
+  Project.AddSvdFile ("$(ProjectDir)/Scripts/STM32F401.svd");
   //
   // User settings
   //
