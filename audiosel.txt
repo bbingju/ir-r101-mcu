@@ -1,0 +1,80 @@
+Configuration	audiosel
+STM32CubeMX 	6.6.1
+Date	11/05/2022
+MCU	STM32F401CCUx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	TIM1	SYS_VS_tim1	VP_SYS_VS_tim1
+USART6	Asynchronous	USART6_RX	PA12
+USART6	Asynchronous	USART6_TX	PA11
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+15	PA5	GPIO_Output	FAN_CTRL
+18	PB0	GPIO_Output	RELAY_EXT_CTRL
+19	PB1	GPIO_Input	EXT_CTRL
+20	PB2	GPIO_Input	RELAY_EXT_CTRL2
+21	PB10	GPIO_Output	FRONT_LED3
+25	PB12	GPIO_Output	FRONT_LED4
+26	PB13	GPIO_Output	AUDIO_MUX_A
+30	PA9*	USART1_TX	LTE_UART_TXD
+31	PA10*	USART1_RX	LTE_UART_RXD
+32	PA11	USART6_TX	
+33	PA12	USART6_RX	
+42	PB6*	I2C1_SCL	
+43	PB7*	I2C1_SDA	
+45	PB8	GPIO_Output	FRONT_LED1
+46	PB9	GPIO_Output	FRONT_LED2
+PERIPHERALS	MODES	FUNCTIONS	PINS
+SYS	TIM1	SYS_VS_tim1	VP_SYS_VS_tim1
+USART6	Asynchronous	USART6_RX	PA12
+USART6	Asynchronous	USART6_TX	PA11
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+15	PA5	GPIO_Output	FAN_CTRL
+18	PB0	GPIO_Output	RELAY_EXT_CTRL
+19	PB1	GPIO_Input	EXT_CTRL
+20	PB2	GPIO_Input	RELAY_EXT_CTRL2
+21	PB10	GPIO_Output	FRONT_LED3
+25	PB12	GPIO_Output	FRONT_LED4
+26	PB13	GPIO_Output	AUDIO_MUX_A
+30	PA9*	USART1_TX	LTE_UART_TXD
+31	PA10*	USART1_RX	LTE_UART_RXD
+32	PA11	USART6_TX	
+33	PA12	USART6_RX	
+42	PB6*	I2C1_SCL	
+43	PB7*	I2C1_SDA	
+45	PB8	GPIO_Output	FRONT_LED1
+46	PB9	GPIO_Output	FRONT_LED2
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : audiosel
+Project Folder : C:\Users\bbing\Dropbox\work\nerdvana\2022-08-UjinTech\src\audiosel
+Toolchain / IDE : STM32CubeIDE
+Firmware Package Name and Version : STM32Cube FW_F4 V1.27.1
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
